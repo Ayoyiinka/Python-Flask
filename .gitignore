@@ -1,0 +1,6 @@
+venv
+microblog.log*
+app.db
+
+*.mo 
+notes.txt
