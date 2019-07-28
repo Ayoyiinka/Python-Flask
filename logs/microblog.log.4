@@ -1,0 +1,65 @@
+2019-07-03 19:11:37,954 ERROR: Exception on /index [GET] [in /mnt/c/users/eagle-age/desktop/flask/venv/lib/python3.6/site-packages/flask/app.py:1780]
+Traceback (most recent call last):
+  File "/mnt/c/users/eagle-age/desktop/flask/venv/lib/python3.6/site-packages/flask/app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/mnt/c/users/eagle-age/desktop/flask/venv/lib/python3.6/site-packages/flask/app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/mnt/c/users/eagle-age/desktop/flask/venv/lib/python3.6/site-packages/flask/app.py", line 1737, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/mnt/c/users/eagle-age/desktop/flask/venv/lib/python3.6/site-packages/flask/_compat.py", line 36, in reraise
+    raise value
+  File "/mnt/c/users/eagle-age/desktop/flask/venv/lib/python3.6/site-packages/flask/app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/mnt/c/users/eagle-age/desktop/flask/venv/lib/python3.6/site-packages/flask/app.py", line 1818, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/mnt/c/users/eagle-age/desktop/flask/venv/lib/python3.6/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/mnt/c/users/eagle-age/desktop/flask/flasky/routes.py", line 26, in index
+    page = requests.arg.get('page', 1, type=int)
+NameError: name 'requests' is not defined
+2019-07-03 19:12:40,259 INFO: Microblog startup [in /mnt/c/users/eagle-age/desktop/flask/flasky/__init__.py:43]
+2019-07-03 19:12:50,695 ERROR: Exception on /index [GET] [in /mnt/c/users/eagle-age/desktop/flask/venv/lib/python3.6/site-packages/flask/app.py:1780]
+Traceback (most recent call last):
+  File "/mnt/c/users/eagle-age/desktop/flask/venv/lib/python3.6/site-packages/flask/app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/mnt/c/users/eagle-age/desktop/flask/venv/lib/python3.6/site-packages/flask/app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/mnt/c/users/eagle-age/desktop/flask/venv/lib/python3.6/site-packages/flask/app.py", line 1737, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/mnt/c/users/eagle-age/desktop/flask/venv/lib/python3.6/site-packages/flask/_compat.py", line 36, in reraise
+    raise value
+  File "/mnt/c/users/eagle-age/desktop/flask/venv/lib/python3.6/site-packages/flask/app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/mnt/c/users/eagle-age/desktop/flask/venv/lib/python3.6/site-packages/flask/app.py", line 1818, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/mnt/c/users/eagle-age/desktop/flask/venv/lib/python3.6/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/mnt/c/users/eagle-age/desktop/flask/flasky/routes.py", line 26, in index
+    page = request.arg.get('page', 1, type=int)
+  File "/mnt/c/users/eagle-age/desktop/flask/venv/lib/python3.6/site-packages/werkzeug/local.py", line 348, in __getattr__
+    return getattr(self._get_current_object(), name)
+AttributeError: 'Request' object has no attribute 'arg'
+2019-07-03 19:13:20,828 INFO: Microblog startup [in /mnt/c/users/eagle-age/desktop/flask/flasky/__init__.py:43]
+2019-07-03 19:13:36,192 ERROR: Exception on /index [GET] [in /mnt/c/users/eagle-age/desktop/flask/venv/lib/python3.6/site-packages/flask/app.py:1780]
+Traceback (most recent call last):
+  File "/mnt/c/users/eagle-age/desktop/flask/venv/lib/python3.6/site-packages/flask/app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/mnt/c/users/eagle-age/desktop/flask/venv/lib/python3.6/site-packages/flask/app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/mnt/c/users/eagle-age/desktop/flask/venv/lib/python3.6/site-packages/flask/app.py", line 1737, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/mnt/c/users/eagle-age/desktop/flask/venv/lib/python3.6/site-packages/flask/_compat.py", line 36, in reraise
+    raise value
+  File "/mnt/c/users/eagle-age/desktop/flask/venv/lib/python3.6/site-packages/flask/app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/mnt/c/users/eagle-age/desktop/flask/venv/lib/python3.6/site-packages/flask/app.py", line 1818, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/mnt/c/users/eagle-age/desktop/flask/venv/lib/python3.6/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/mnt/c/users/eagle-age/desktop/flask/flasky/routes.py", line 26, in index
+    page = request.arga.get('page', 1, type=int)
+  File "/mnt/c/users/eagle-age/desktop/flask/venv/lib/python3.6/site-packages/werkzeug/local.py", line 348, in __getattr__
+    return getattr(self._get_current_object(), name)
+AttributeError: 'Request' object has no attribute 'arga'
+2019-07-03 19:13:59,154 INFO: Microblog startup [in /mnt/c/users/eagle-age/desktop/flask/flasky/__init__.py:43]
+2019-07-03 19:40:34,839 INFO: Microblog startup [in /mnt/c/users/eagle-age/desktop/flask/flasky/__init__.py:43]

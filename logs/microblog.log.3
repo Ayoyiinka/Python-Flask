@@ -1,0 +1,105 @@
+2019-07-03 19:40:48,983 ERROR: Exception on / [GET] [in /mnt/c/users/eagle-age/desktop/flask/venv/lib/python3.6/site-packages/flask/app.py:1780]
+Traceback (most recent call last):
+  File "/mnt/c/users/eagle-age/desktop/flask/venv/lib/python3.6/site-packages/flask/app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/mnt/c/users/eagle-age/desktop/flask/venv/lib/python3.6/site-packages/flask/app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/mnt/c/users/eagle-age/desktop/flask/venv/lib/python3.6/site-packages/flask/app.py", line 1737, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/mnt/c/users/eagle-age/desktop/flask/venv/lib/python3.6/site-packages/flask/_compat.py", line 36, in reraise
+    raise value
+  File "/mnt/c/users/eagle-age/desktop/flask/venv/lib/python3.6/site-packages/flask/app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/mnt/c/users/eagle-age/desktop/flask/venv/lib/python3.6/site-packages/flask/app.py", line 1818, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/mnt/c/users/eagle-age/desktop/flask/venv/lib/python3.6/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/mnt/c/users/eagle-age/desktop/flask/flasky/routes.py", line 31, in index
+    next_url=next_url, prev_url=prev_url) #paginate returns a pagination object and the posts can be obtained from it using items
+  File "/mnt/c/users/eagle-age/desktop/flask/venv/lib/python3.6/site-packages/flask/templating.py", line 134, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/mnt/c/users/eagle-age/desktop/flask/venv/lib/python3.6/site-packages/jinja2/environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/mnt/c/users/eagle-age/desktop/flask/venv/lib/python3.6/site-packages/jinja2/environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/mnt/c/users/eagle-age/desktop/flask/venv/lib/python3.6/site-packages/jinja2/environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/mnt/c/users/eagle-age/desktop/flask/venv/lib/python3.6/site-packages/jinja2/loaders.py", line 125, in load
+    code = environment.compile(source, name, filename)
+  File "/mnt/c/users/eagle-age/desktop/flask/venv/lib/python3.6/site-packages/jinja2/environment.py", line 591, in compile
+    self.handle_exception(exc_info, source_hint=source_hint)
+  File "/mnt/c/users/eagle-age/desktop/flask/venv/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/mnt/c/users/eagle-age/desktop/flask/venv/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/mnt/c/users/eagle-age/desktop/flask/flasky/templates/index.html", line 26, in template
+    {% endblock %}
+  File "/mnt/c/users/eagle-age/desktop/flask/venv/lib/python3.6/site-packages/jinja2/environment.py", line 497, in _parse
+    return Parser(self, source, name, encode_filename(filename)).parse()
+  File "/mnt/c/users/eagle-age/desktop/flask/venv/lib/python3.6/site-packages/jinja2/parser.py", line 901, in parse
+    result = nodes.Template(self.subparse(), lineno=1)
+  File "/mnt/c/users/eagle-age/desktop/flask/venv/lib/python3.6/site-packages/jinja2/parser.py", line 883, in subparse
+    rv = self.parse_statement()
+  File "/mnt/c/users/eagle-age/desktop/flask/venv/lib/python3.6/site-packages/jinja2/parser.py", line 130, in parse_statement
+    return getattr(self, 'parse_' + self.stream.current.value)()
+  File "/mnt/c/users/eagle-age/desktop/flask/venv/lib/python3.6/site-packages/jinja2/parser.py", line 268, in parse_block
+    node.body = self.parse_statements(('name:endblock',), drop_needle=True)
+  File "/mnt/c/users/eagle-age/desktop/flask/venv/lib/python3.6/site-packages/jinja2/parser.py", line 165, in parse_statements
+    result = self.subparse(end_tokens)
+  File "/mnt/c/users/eagle-age/desktop/flask/venv/lib/python3.6/site-packages/jinja2/parser.py", line 883, in subparse
+    rv = self.parse_statement()
+  File "/mnt/c/users/eagle-age/desktop/flask/venv/lib/python3.6/site-packages/jinja2/parser.py", line 130, in parse_statement
+    return getattr(self, 'parse_' + self.stream.current.value)()
+  File "/mnt/c/users/eagle-age/desktop/flask/venv/lib/python3.6/site-packages/jinja2/parser.py", line 213, in parse_if
+    'name:endif'))
+  File "/mnt/c/users/eagle-age/desktop/flask/venv/lib/python3.6/site-packages/jinja2/parser.py", line 165, in parse_statements
+    result = self.subparse(end_tokens)
+  File "/mnt/c/users/eagle-age/desktop/flask/venv/lib/python3.6/site-packages/jinja2/parser.py", line 883, in subparse
+    rv = self.parse_statement()
+  File "/mnt/c/users/eagle-age/desktop/flask/venv/lib/python3.6/site-packages/jinja2/parser.py", line 144, in parse_statement
+    self.fail_unknown_tag(token.value, token.lineno)
+  File "/mnt/c/users/eagle-age/desktop/flask/venv/lib/python3.6/site-packages/jinja2/parser.py", line 97, in fail_unknown_tag
+    return self._fail_ut_eof(name, self._end_token_stack, lineno)
+  File "/mnt/c/users/eagle-age/desktop/flask/venv/lib/python3.6/site-packages/jinja2/parser.py", line 90, in _fail_ut_eof
+    self.fail(' '.join(message), lineno)
+  File "/mnt/c/users/eagle-age/desktop/flask/venv/lib/python3.6/site-packages/jinja2/parser.py", line 59, in fail
+    raise exc(msg, lineno, self.name, self.filename)
+jinja2.exceptions.TemplateSyntaxError: Encountered unknown tag 'endblock'. You probably made a nesting mistake. Jinja is expecting this tag, but currently looking for 'elif' or 'else' or 'endif'. The innermost block that needs to be closed is 'if'.
+2019-07-03 19:42:02,522 INFO: Microblog startup [in /mnt/c/users/eagle-age/desktop/flask/flasky/__init__.py:43]
+2019-07-06 13:53:16,775 INFO: Microblog startup [in /mnt/c/users/eagle-age/desktop/flask/flasky/__init__.py:49]
+2019-07-06 13:54:48,005 INFO: Microblog startup [in /mnt/c/users/eagle-age/desktop/flask/flasky/__init__.py:49]
+2019-07-07 08:03:39,523 INFO: Microblog startup [in /mnt/c/users/eagle-age/desktop/flask/flasky/__init__.py:49]
+2019-07-07 16:15:02,341 INFO: Microblog startup [in /mnt/c/users/eagle-age/desktop/flask/flasky/__init__.py:51]
+2019-07-11 19:25:53,386 INFO: Microblog startup [in /mnt/c/users/eagle-age/desktop/flask/flasky/__init__.py:52]
+2019-07-11 19:26:29,479 INFO: Microblog startup [in /mnt/c/users/eagle-age/desktop/flask/flasky/__init__.py:52]
+2019-07-11 19:27:34,379 INFO: Microblog startup [in /mnt/c/users/eagle-age/desktop/flask/flasky/__init__.py:52]
+2019-07-11 19:27:53,470 INFO: Microblog startup [in /mnt/c/users/eagle-age/desktop/flask/flasky/__init__.py:52]
+2019-07-11 19:32:36,627 INFO: Microblog startup [in /mnt/c/users/eagle-age/desktop/flask/flasky/__init__.py:52]
+2019-07-11 19:33:29,199 INFO: Microblog startup [in /mnt/c/users/eagle-age/desktop/flask/flasky/__init__.py:52]
+2019-07-11 19:33:41,678 INFO: Microblog startup [in /mnt/c/users/eagle-age/desktop/flask/flasky/__init__.py:52]
+2019-07-11 19:34:13,822 INFO: Microblog startup [in /mnt/c/users/eagle-age/desktop/flask/flasky/__init__.py:52]
+2019-07-11 19:34:28,617 INFO: Microblog startup [in /mnt/c/users/eagle-age/desktop/flask/flasky/__init__.py:52]
+2019-07-11 21:42:58,774 INFO: Microblog startup [in /mnt/c/users/eagle-age/desktop/flask/flasky/__init__.py:52]
+2019-07-11 22:10:44,253 INFO: Microblog startup [in /mnt/c/users/eagle-age/desktop/flask/flasky/__init__.py:52]
+2019-07-11 22:11:15,132 INFO: Microblog startup [in /mnt/c/users/eagle-age/desktop/flask/flasky/__init__.py:52]
+2019-07-12 10:01:24,554 INFO: Microblog startup [in /mnt/c/users/eagle-age/desktop/flask/flasky/__init__.py:52]
+2019-07-12 10:02:39,120 INFO: Microblog startup [in /mnt/c/users/eagle-age/desktop/flask/flasky/__init__.py:52]
+2019-07-12 10:03:20,258 INFO: Microblog startup [in /mnt/c/users/eagle-age/desktop/flask/flasky/__init__.py:52]
+2019-07-12 10:08:46,239 INFO: Microblog startup [in /mnt/c/users/eagle-age/desktop/flask/flasky/__init__.py:52]
+2019-07-12 10:09:52,175 INFO: Microblog startup [in /mnt/c/users/eagle-age/desktop/flask/flasky/__init__.py:52]
+2019-07-12 10:12:31,622 INFO: Microblog startup [in /mnt/c/users/eagle-age/desktop/flask/flasky/__init__.py:52]
+2019-07-12 10:15:45,222 INFO: Microblog startup [in /mnt/c/users/eagle-age/desktop/flask/flasky/__init__.py:52]
+2019-07-12 10:17:27,922 INFO: Microblog startup [in /mnt/c/users/eagle-age/desktop/flask/flasky/__init__.py:52]
+2019-07-12 10:58:46,858 INFO: Microblog startup [in /mnt/c/users/eagle-age/desktop/flask/flasky/__init__.py:52]
+2019-07-12 11:08:59,219 INFO: Microblog startup [in /mnt/c/users/eagle-age/desktop/flask/flasky/__init__.py:52]
+2019-07-12 11:10:14,778 INFO: Microblog startup [in /mnt/c/users/eagle-age/desktop/flask/flasky/__init__.py:52]
+2019-07-12 11:25:40,224 INFO: Microblog startup [in /mnt/c/users/eagle-age/desktop/flask/flasky/__init__.py:52]
+2019-07-12 11:33:31,344 INFO: Microblog startup [in /mnt/c/users/eagle-age/desktop/flask/flasky/__init__.py:52]
+2019-07-12 11:46:54,088 INFO: Microblog startup [in /mnt/c/users/eagle-age/desktop/flask/flasky/__init__.py:52]
+2019-07-12 11:47:42,461 INFO: Microblog startup [in /mnt/c/users/eagle-age/desktop/flask/flasky/__init__.py:52]
+2019-07-14 07:42:51,391 INFO: Microblog startup [in /mnt/c/users/eagle-age/desktop/flask/flasky/__init__.py:52]
+2019-07-24 10:41:31,935 INFO: Microblog startup [in /home/ayoyinka/Documents/flask/flasky/__init__.py:52]
+2019-07-24 10:42:02,340 INFO: Microblog startup [in /home/ayoyinka/Documents/flask/flasky/__init__.py:52]
+2019-07-24 10:43:31,026 INFO: Microblog startup [in /home/ayoyinka/Documents/flask/flasky/__init__.py:52]
+2019-07-24 10:45:51,676 INFO: Microblog startup [in /home/ayoyinka/Documents/flask/flasky/__init__.py:52]
+2019-07-24 10:48:11,399 INFO: Microblog startup [in /home/ayoyinka/Documents/flask/flasky/__init__.py:52]
